@@ -53,14 +53,13 @@ nav {
 }
 
 .container {
-  height: 1000px;
+
 }
 
 .container__products {
   padding: 20px;
-  background: blue;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 10px;
 }
 
@@ -102,7 +101,6 @@ nav {
   text-shadow: 
     4px 4px 0px rgb(71, 69, 69), 
     7px 7px 0px rgba(0, 0, 0, 0.2);
-  position: absolute;
   bottom: 0;
   width: 100%;
   padding: 30px;

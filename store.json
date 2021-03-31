@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "img": "https://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2020/10/28130044/z551.jpg",
+    "name": "Hyper X",
+    "precio": 800
+  },
+  {
+    "id": 3,
+    "img": "https://phantom.pe/pub/media/catalog/product/cache/71a032b60710d907b279b6023a79a12b/5/_/5.1_pc_teclado_logitech_g_pro_gaming_keyboard.jpg",
+    "name": "Logitech",
+    "precio": 600
+  },
+  {
+    "id": 3,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrZCOW3gADGje65MtSKBMnTZgEYJzsrTMHVA&usqp=CAU",
+    "name": "Logitech",
+    "precio": 600
+  },
+  {
+    "id": 4,
+    "img": "https://falabella.scene7.com/is/image/FalabellaPE/17050028?wid=423&hei=423&qlt=70&crop=0,0,0,0",
+    "name": "Logitech",
+    "precio": 600
+  },
+  {
+    "id": 1,
+    "img": "https://phantom.pe/pub/media/catalog/product/cache/71a032b60710d907b279b6023a79a12b/5/_/5.1_pc_teclado_logitech_g_pro_gaming_keyboard.jpg",
+    "name": "Logitech",
+    "precio": 600
+  },
+  {
+    "id": 1,
+    "img": "https://phantom.pe/pub/media/catalog/product/cache/71a032b60710d907b279b6023a79a12b/5/_/5.1_pc_teclado_logitech_g_pro_gaming_keyboard.jpg",
+    "name": "Logitech",
+    "precio": 600
+  }
+]

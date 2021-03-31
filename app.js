@@ -1,35 +1,21 @@
-const products = document.getElementById('products');
-
 const fetchData = async () => {
-  try {
-    const res = await fetch('store.json');
-    const data = await res.json(); 
-    showProducts(data)
-
-  } catch (error) {
-    console.log(error)
-  }
+  const res = await fetch('store.json');
+  const data = await res.json(); 
+  showData(data)
 }
 
 fetchData()
 
-function showProducts(data) {
-  data.forEach(product => {
-    console.log(product);
-  })
-}
 
-let carrito = document.querySelectorAll('.add__carrito');
-
-
-for(let i=0; i< carrito.length; i++) {
-  carrito[i].addEventListener('click', () => {
-    carritoItems()
-  });
-}
-
-function carritoItems() {
-  let productsItems = parseInt(localStorage.getItem('hola'));
-  console.log(typeof(productsItems))
-  localStorage.setItem('hola', 3);
+function showData(data){
+  let container = document.getElementById('container__products');
+  for(let i=0; i<data.length; i++){
+    let product = `<div class="product" id="products">
+    <img src=${data[i].img}>
+    <h3>${data[i].name}</h3>
+    <span>${data[i].precio}</span>
+    <a class="add__carrito" href="#" >Anadir al Carrito<i class="product__icon fas fa-cart-plus"></i></a>
+    </div>`
+    container.innerHTML += product
+  }
 }

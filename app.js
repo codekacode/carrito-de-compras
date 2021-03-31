@@ -18,15 +18,30 @@ function showData(data){
     </div>`
     container.innerHTML += product
   }
+  addProduct()
 }
 
 function addProduct(){
   let carrito = document.querySelectorAll('a')
   for(let i=0; i< carrito.length; i++){
     carrito[i].addEventListener('click', () => {
-      console.log("chick product")
+      quantityItems(products[i]);
     })
   }
 }
 
-addProduct()
+function quantityItems(product) {
+  let quantity = parseInt(localStorage.getItem('quantityItems'));
+  
+  let carrito = localStorage.getItem('productsInCart');
+  carrito = JSON.parse(carrito);
+
+  if( quantity ) {
+      localStorage.setItem('quantityItems', quantity + 1);
+      document.querySelector('.tu__carrito span').textContent = quantity + 1;
+  } else {
+      localStorage.setItem('quantityItems', 1);
+      document.querySelector('.tu__carrito span').textContent = 1;
+  }
+}
+

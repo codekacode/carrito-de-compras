@@ -90,6 +90,11 @@ nav {
   
 }
 
+.tu__carrito {
+  font-size: 1.8em;
+  margin-left: 50px;
+}
+
 .main-footer{
   display: flex;
   flex-direction: column;
